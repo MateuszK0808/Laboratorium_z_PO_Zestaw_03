@@ -10,6 +10,7 @@ namespace Laboratorium_z_PO_Zestaw_03
     {
         static void Main(string[] args)
         {
+            // TODO: Dopisać kod testowy do zadania 1;
         }
     }
 }
