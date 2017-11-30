@@ -22,5 +22,10 @@ namespace Laboratorium_z_PO_Zestaw_03
             this.imie = imie_;
             this.nazwisko = nazwisko_;
         }
+
+        public void WypiszInfo()
+        {
+            Console.WriteLine("  -{0} {1}", imie, nazwisko);
+        }
     }
 }

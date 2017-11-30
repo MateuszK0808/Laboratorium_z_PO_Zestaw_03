@@ -36,11 +36,13 @@ namespace Laboratorium_z_PO_Zestaw_03
         public override void WypiszInfo()
         {
             Console.WriteLine("Książka:");
-            Console.WriteLine("Tytuł:" + tytul);
+            Console.WriteLine("Tytuł: " + tytul);
             Console.WriteLine("Id: " + id);
             Console.WriteLine("Wydawnictwo: " + wydawnictwo);
             Console.WriteLine("Rok wydania: " + rokWydania);
             Console.WriteLine("Liczba stron: " + liczbaStron);
+            Console.WriteLine("Autorzy: ");
+            autorzy.ForEach((a) => a.WypiszInfo());
         }
     }
 }

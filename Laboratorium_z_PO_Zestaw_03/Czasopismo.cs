@@ -28,8 +28,8 @@ namespace Laboratorium_z_PO_Zestaw_03
         }
         public override void WypiszInfo()
         {
-            Console.WriteLine("Czasopismo:");
-            Console.WriteLine("Tytuł:" + tytul);
+            Console.WriteLine("Czasopismo: ");
+            Console.WriteLine("Tytuł: " + tytul);
             Console.WriteLine("Id: " + id);
             Console.WriteLine("Wydawnictwo: " + wydawnictwo);
             Console.WriteLine("Rok wydania: " + rokWydania);

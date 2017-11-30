@@ -13,19 +13,25 @@ namespace Laboratorium_z_PO_Zestaw_03
 
         public Katalog()
         {
-            DzialTematyczny = "";
+            dzialTematyczny = "";
         }
 
         public Katalog(string dzialTematyczny_)
         {
-            DzialTematyczny = dzialTematyczny_;
+            dzialTematyczny = dzialTematyczny_;
         }
 
-        public string DzialTematyczny { get => dzialTematyczny; set => dzialTematyczny = value; }
 
         public void DodajPozycje(Pozycja pozycja)
         {
             pozycje.Add(pozycja);
+        }
+
+        public void WypiszInfo()
+        {
+            Console.WriteLine("Pozycje w katalogu");
+            Console.WriteLine("Dział tematyczny " + dzialTematyczny);
+            pozycje.ForEach((p) => p.WypiszInfo());
         }
     }
 }
